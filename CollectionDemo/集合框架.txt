@@ -47,3 +47,4 @@ List:特有的常见方法,有一个共性特点都可以操作角标
 	int indexOf(object)
 	int lastIndexOf(object)
 
+list集合是可以完成对元素的增删改查
