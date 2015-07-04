@@ -1,5 +1,7 @@
 /*
 Map:一次添加一对元素
+map称为双列集合 Collection称为单列集合
+
 map集合中存储的就是键值对
 map集合中必须保证键的唯一性
 
@@ -19,11 +21,16 @@ value get(key)
 int size() ; 获取键值对的个数
 
 */
+import java.util.Map;
+import java.util.HashMap;
 public class mapDemo{
 	public static void main(String[] args){
-		
+		Map<Integer,String> map=new HashMap<Integer,String>();
+		method(map);
 	}
 	public static void method(Map<Integer,String> map){
-		map.put(8,'xiaoming');
+		System.out.println(map.put(8,"xiaoming"));//null
+		System.out.println(map.put(9,"xiaoming"));//null
+		System.out.println(map);//{8=xiaoming, 9=xiaoming}
 	}
 }
